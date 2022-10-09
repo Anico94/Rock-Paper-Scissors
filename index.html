@@ -2,27 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Rock, Paper, Scissors</title>
     <link rel = "stylesheet" href = "css/style.css">
+    <script src = "js/jquery.js"></script>
     <script src = "js/rock-paper-scissors.js"></script>
 </head>
 <body>
-    <h1>Rock, Paper Scissors</h1>
-    <h3>The classic game of Rock, Paper, Scissors</h3>
+    <h1>Rock, Paper, Scissors</h1>
+    <h3>An old classic from 206BC</h3>
     <section class = "game-rules">
-        <p>The rules are as follows:</p>
         <ul>
+            <li>
+                <h4>The rules are simple and as follows:</h4>
             <li>Rock beats scissors</li>
             <li>Scissors beats paper</li>
             <li>Paper beats rock</li>
         </ul>
+        <p>Select an option below to play against the computer</p>
     </section>
     <div class = "options"> <!-- Image of a rock, paper and scissors to go in the div-->
-        <img class = "rock" src = "https://www.kindpng.com/picc/m/564-5649636_angle-rock-computer-icons-cartoon-rock-transparent-background.png" alt ="Rock">
-        <img class = "paper" src= "https://media.istockphoto.com/vectors/cartoon-blank-piece-of-paper-vector-id1190524331?k=20&m=1190524331&s=170667a&w=0&h=1lGBZ4V1sywxiqWQ3M-PqjdEkvjVwMnJF9GB_f1iGcQ=" alt = "Paper">
-        <img class = "scissors" src = "https://img.freepik.com/premium-vector/cute-scissors-vector-hand-drawn-cartoon-kawaii-character-illustration-icon_464314-1813.jpg?w=2000" alt = "Scissors">
+        <div class = 'image button'><img class = "rock" src = "img/rock.jpg" alt ="Rock"></div>
+        <div class = 'image button'><img class = "paper" src= "img/paper.jpg" alt = "Paper"></div>
+        <div class = 'image button'><img class = "scissors" src = "img/scissors.jpg" alt = "Scissors"></div>
     </div>
+
+    <div class = 'result-screen'>
+        <h2>RESULT</h2>
+        <p class = 'result-text'>This is the result here</p>
+        <button class = "new game">Play Again?</button>
+    </div>
+
 </body>
 </html>
